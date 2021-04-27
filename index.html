@@ -32,11 +32,6 @@
 
 
 
-
-
-
-
-
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- script
@@ -273,7 +268,7 @@
 			@media screen and (max-width: 600px) {
 				.column {
 					width: 100%;
-					height: 455px;
+					/* height: 455px; */
 				}
 			}
 
@@ -316,7 +311,15 @@
 				text-decoration: none;
 				transform: scale(1.1);
 			}
-
+			details{
+				display: block;
+				width:max(100%,20em)
+			}
+			summary{
+				cursor: pointer;
+				width: 100%;
+				background: #f8b262;
+			}
 			.list-type1 a:before {
 				content: counter(0);
 				counter-increment: li;
@@ -423,9 +426,12 @@
    
 			</div> 
     -->
-		<div style="display: flex;justify-content: center;flex-wrap: wrap;">
-		<div class="column" style="background-color:#111417;">
-			<h2 style="text-align: center;">Track 1</h2>
+		<div style="display: flex; flex-direction: column; align-items: center;">
+		<details class="column" style="background-color:#111417;">
+			<summary>
+
+				<h2 style="text-align: center;">Track 1</h2>
+			</summary>
 			<div class="list-type1" style="width: 100%;">
 				<ol>
 					<li><a>Thermal and Fluid Power Engg.</a></li>
@@ -440,9 +446,12 @@
 					<li><a>Artifical Intelligence and Machine Learning</a></li>
 				</ol>
 			</div>
-		</div >
-		<div class="column" style="background-color:#111417;">
-			<h2 style="text-align: center;">Track 2</h2>
+		</details >
+		<details class="column" style="background-color:#111417;">
+			<summary>
+
+				<h2 style="text-align: center;">Track 2</h2>
+			</summary>
 			<div class="list-type1" style="width: 100%;">
 				<ol>
 					<li><a>Microcontroller and Embedded System</a></li>
@@ -453,10 +462,29 @@
 					<li><a>Microwave and Radar Engg</a></li>
 				</ol>
 			</div>
-		</div>
+		</details>
 
-		<div class="column" style="background-color:#111417;">
-			<h2 style="text-align: center;">Track 4</h2>
+		<details class="column" style="background-color:#111417;">
+			<summary>
+
+				<h2 style="text-align: center;">Track 3</h2>
+			</summary>
+			<div class="list-type1" style="width: 100%;">
+				<ol>
+					<li><a>Process Automation</a></li>
+					<li><a>Control System Design & Simulation</a></li>
+					<li><a>Latest Trends in Sensor Design</a></li>
+					<li><a>Biomedical Instrumentation </a></li>
+					<li><a>Instrumentation for Agriculture and Society</a></li>
+				</ol>
+			</div>
+		</details>
+		
+		<details class="column" style="background-color:#111417;">
+			<summary>
+
+				<h2 style="text-align: center;">Track 4</h2>
+			</summary>
 			<div class="list-type1" style="width: 100%;">
 				<ol>
 					<li><a>Soft Computing</a></li>
@@ -471,23 +499,13 @@
 					<li><a>Robotics</a></li>
 				</ol>
 			</div>
-		</div>
+		</details>
 
-		<div class="column" style="background-color:#111417;">
-			<h2 style="text-align: center;">Track 3</h2>
-			<div class="list-type1" style="width: 100%;">
-				<ol>
-					<li><a>Process Automation</a></li>
-					<li><a>Control System Design & Simulation</a></li>
-					<li><a>Latest Trends in Sensor Design</a></li>
-					<li><a>Biomedical Instrumentation </a></li>
-					<li><a>Instrumentation for Agriculture and Society</a></li>
-				</ol>
-			</div>
-		</div>
-		
-		<div class="column" style="background-color:#111417;">
-			<h2 style="text-align: center;">Track 5</h2>
+		<details class="column" style="background-color:#111417;">
+			<summary>
+
+				<h2 style="text-align: center;">Track 5</h2>
+			</summary>
 			<div class="list-type1" style="width: 100%;">
 				<ol>
 					<li><a>Concrete Technology</a></li>
@@ -499,9 +517,15 @@
 					<li><a>Environmental Engg.</a></li>
 				</ol>
 			</div>
-		</div>
+		</details>
 
 		</div>
+
+		<!-- dropdown start -->
+
+		
+
+		<!-- dropdown end -->
 
 		<div class="row section-head">
 			<div class="twelve columns" style="background-color:#111417;">
