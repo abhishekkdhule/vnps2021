@@ -2770,4 +2770,11 @@ footer .social-links li:first-child {
 		display: block;
 		margin: 0 auto;
 	}
+	.row-logo{
+		flex-wrap: wrap;
+	}
+	.column-logo{
+		width: 4em;
+		margin: 0.5em;
+	}
 }

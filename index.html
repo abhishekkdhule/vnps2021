@@ -62,13 +62,18 @@
 
 		.row-logo {
 			display: flex;
-			margin: auto;
+			justify-content: center;
+			align-items: center;
+
 		}
 
 		/* Create three equal columns that sits next to each other */
 		.column-logo {
-			flex: 33.33%;
-			padding: 5px;
+			width: 5em;
+			aspect-ratio: 1;
+			margin-inline: 1em;
+			display: grid;
+			place-content: center;
 		}
 	</style>
 
@@ -204,36 +209,41 @@
 		<div class="row-logo" id=Logo>
 			<div class="column-logo">
 				<img class="revealOnScroll" data-animation="fadeInUp" src="images/logos/final/csi.png" alt="csi"
-					style="width:100px">
+				>
 			</div>
-			<div class="column-logo">
+			<div class="column-logo" style="transform: scale(0.9)">
 				<img class="revealOnScroll" data-animation="fadeInUp" src="images/logos/final/isa.png" alt="ishrae"
-					style="width:100px;">
+					>
 			</div>
 			<div class="column-logo">
 				<img class="revealOnScroll" data-animation="fadeInUp" src="images/logos/final/ishrae.png" alt="ishrae"
-					style="width:120px;">
+					>
 			</div>
-			<div class="column-logo">
+			<div class="column-logo" style="transform: scale(1.5)">
 				<img class="revealOnScroll" data-animation="fadeInUp" src="images/logos/final/igbc.png" alt="igbc"
-					style="width:1500px;">
+					>
 			</div>
 			<div class="column-logo">
 				<img class="revealOnScroll" data-animation="fadeInUp" src="images/logos/final/ieee.png" alt="ieee"
-					style="width:100px;">
+					>
 			</div>
 			<div class="column-logo">
 				<img class="revealOnScroll" data-animation="fadeInUp" src="images/logos/final/iete.png" alt="iete"
-					style="width:110px;">
+					>
 			</div>
 			<div class="column-logo">
 				<img class="revealOnScroll" data-animation="fadeInUp" src="images/logos/final/vmea.png" alt="vmea"
-					style="width:110px;">
+					>
 			</div>
 			<style>
 				.row-logo {
-					margin: 100px;
+					display: flex;
+					margin-block: 2em;
+
 				}
+				/* .row-logo img {
+					width: 100%;
+				} */
 			</style>
 
 		</div>
@@ -855,7 +865,7 @@
 								following email address : vnps2022@vcet.edu.in
 							</li>
 							<li>
-								A sample abstact would look like - <a href='sample_abstract.pdf'target="_blank"
+								A sample abstact would look like <a href='sample_abstract.pdf'target="_blank"
 									class="link">this</a>
 							</li>
 							<li>
