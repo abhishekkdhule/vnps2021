@@ -1750,7 +1750,7 @@ h5 {
 }
 
 .service-list .bgrid:hover {
-	background: rgba(0, 0, 0, 0.1);
+	/* background: rgba(0, 0, 0, 0.1); */
 }
 
 @media only screen and (max-width:600px) {
@@ -1841,7 +1841,7 @@ h5 {
 }
 
 .process .bgrid:hover {
-	background: rgba(0, 0, 0, 0.1);
+	/* background: rgba(0, 0, 0, 0.1); */
 }
 
 @media only screen and (max-width:600px) {
