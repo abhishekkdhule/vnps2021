@@ -253,6 +253,69 @@
 
 
 	<!--------End of -abt us---------------------->
+	<style>
+		.sponsor_logos {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 1em;
+		}
+
+		.sponsor_logo {
+			width: 31%;
+			min-width: 15rem;
+			aspect-ratio: 1;
+			position: relative;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		.sponsor_logo>img {
+			height: 100%;
+			width: 100%;
+		}
+
+		.sponsor_logo.white-bg {
+			background-color: white;
+			padding: 3em;
+		}
+
+		@media only screen and (max-width:600px) {
+			.sponsor_logo.white-bg {
+
+				padding: 1em;
+			}
+		}
+
+		#sponsors {
+			padding: 3em 0;
+		}
+	</style>
+	<section id="sponsors">
+
+		<div class="row section-head">
+
+			<div class="twelve columns">
+				<div class="row text-center">
+					<h1 class="heading-title" style="font-size: 50px; line-height: initial;">Our Sponsors</h1>
+				</div>
+			</div>
+			<div class="sponsor_logos">
+				<div data-animation="fadeInUp" class="sponsor_logo white-bg revealOnScroll">
+					<img src="./images/jija_ev.png" alt="">
+				</div>
+				<div data-animation="fadeInUp" class="sponsor_logo revealOnScroll">
+
+					<img src="./images/trinity.png" alt="">
+				</div>
+				<div data-animation="fadeInUp" class="sponsor_logo revealOnScroll">
+
+					<img src="./images/jitu_optics.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 
 
@@ -269,6 +332,8 @@
 				</div>
 				<p style="text-align: center;">The following tracks refers to the categories in which your project
 					belong</p>
+				<p style="text-align: center;">Entries are not restricted to these topics
+					only.</p>
 
 			</div>
 
@@ -377,287 +442,27 @@
 			.list-group-flush{
 				min-height: 30rem;
 			}
+			.card-img-top{
+				border-radius: 15px;
+			}
 		</style>
 
-		<!-- portfolio-wrapper -->
-		<!-- <div id="portfolio-wrapper" class="bgrid-fifth s-bgrid-whole tab-bgrid-whole">
 
-			<div class="bgrid folio-item">
-				  <div class="item-wrap">
-					 <a href="#modal-01">
-							<img class="revealOnScroll" data-animation="fadeInUp" src="images/portfolio/track1.jpg" alt="track1 " style= "padding:10px" > 
-							<h1 class="revealOnScroll" data-animation="fadeInUp" style="text-align:center;	font-family:sans-serif !important;
-							;	color: rgb(228, 220, 220);
-   ">Mechanical</h1>
-						   
-						<div class="overlay">
-							 <div class="portfolio-item-meta">
-									<h5>Track 1</h5>
-								 </div>
-						</div>
-					 </a>
-				  </div>
-				</div> 
-			   
-				<div class="bgrid folio-item">
-				  <div class="item-wrap">
-					 <a href="#modal-02">
-							   <img class="revealOnScroll" data-animation="fadeInUp" src="images/portfolio/track2.jpg" alt="track2" style="padding:10px";>
-							   <h1 class="revealOnScroll" data-animation="fadeInUp" style="text-align:center;font-size: 25px;	font-family:sans-serif !important;
-							;	color: rgb(228, 220, 220);
-   ">Electronics & Telecommunication</h1>
-						<div class="overlay">
-									   <div class="portfolio-item-meta">
-											   <h5>Track 2</h5>
-										   </div>
-							   </div>
-					 </a>
-				  </div>
-				   </div> 
-			   <div class="bgrid folio-item">
-				  <div class="item-wrap">
-					 <a href="#modal-03">
-						<img class="revealOnScroll" data-animation="fadeInUp" src="images/portfolio/track3.jpg" alt="track3" style="padding:10px";>
-						<h1 class="revealOnScroll" data-animation="fadeInUp" style="text-align:center;	font-family:sans-serif !important;
-							;	color: rgb(228, 220, 220);
-   ">Instrumentation</h1>
-						<div class="overlay">
-						 <div class="portfolio-item-meta">
-									<h5>Track 3</h5>
-								 </div>
-						</div>
-					 </a>
-				  </div>
-				</div> 
-			   
-			   <div class="bgrid folio-item">
-				  <div class="item-wrap">
-					 <a href="#modal-04">
-						<img class="revealOnScroll" data-animation="fadeInUp" src="images/portfolio/track4.jpg" alt="track4" style="padding:10px";>
-						<h1 class="revealOnScroll" data-animation="fadeInUp" style="text-align:center;	font-family:sans-serif !important;
-							;	color: rgb(228, 220, 220);
-   ">Computers and IT</h1>
-						<div class="overlay">
-						 <div class="portfolio-item-meta">
-									<h5>Track 4</h5>
-								 </div>
-						</div>
-					 </a>
-				  </div>
-				</div> 
-   
-			   <div class="bgrid folio-item">
-				  <div class="item-wrap">
-					 <a href="#modal-05">
-						<img class="revealOnScroll" data-animation="fadeInUp" src="images/portfolio/track5.jpg" alt="track5" style="padding:10px";>
-						<h1 class="revealOnScroll" data-animation="fadeInUp" style="text-align:center;	font-family:sans-serif !important;
-							;	color: rgb(228, 220, 220);
-   ">Civil</h1>
-						<div class="overlay">
-						 <div class="portfolio-item-meta">
-									<h5>Track 5</h5>
-								 </div>
-						</div>
-					 </a>
-				  </div>
-				   </div>
-   
-			</div> 
-    -->
-		<!-- <div style="display: flex; flex-direction: column; align-items: center;">
-			<details class="column" style="background-color:#111417;">
-				<summary>
-
-					<h2 style="text-align: center;">Track 1</h2>
-				</summary>
-				<div class="list-type1" style="width: 100%;">
-					<ol>
-						<li><a>Thermal and Fluid Power Engg.</a></li>
-						<li><a>Design of Mechanical Systems</a></li>
-						<li><a>Advanced Manufacturing Technique</a></li>
-						<li><a>Renewable Energy</a></li>
-						<li><a>Optimisation and Simulation</a></li>
-
-					</ol>
-				</div>
-			</details>
-			<details class="column" style="background-color:#111417;">
-				<summary>
-
-					<h2 style="text-align: center;">Track 2</h2>
-				</summary>
-				<div class="list-type1" style="width: 100%;">
-					<ol>
-						<li><a>Microcontroller and Embedded System</a></li>
-						<li><a>Signal,Image, Speech & Video Processing</a></li>
-						<li><a>Emerging Wireless Communication Technologies and Sensor Networ</a></li>
-						<li><a>VLSI Application</a></li>
-						<li><a>Microwave and Radar Engg</a></li>
-					</ol>
-				</div>
-			</details>
-
-			<details class="column" style="background-color:#111417;">
-				<summary>
-
-					<h2 style="text-align: center;">Track 3</h2>
-				</summary>
-				<div class="list-type1" style="width: 100%;">
-					<ol>
-						<li><a>Process Automation</a></li>
-						<li><a>Control System Design & Simulation</a></li>
-						<li><a>Latest Trends in Sensor Design</a></li>
-						<li><a>Biomedical Instrumentation </a></li>
-						<li><a>Instrumentation for Agriculture and Society</a></li>
-					</ol>
-				</div>
-			</details>
-
-			<details class="column" style="background-color:#111417;">
-				<summary>
-
-					<h2 style="text-align: center;">Track 4</h2>
-				</summary>
-				<div class="list-type1" style="width: 100%;">
-					<ol>
-						<li><a>Cloud Computing and Big Data</a></li>
-						<li><a>Artifical Intelligence and Machine Learning</a></li>
-						<li><a>Gaming</a></li>
-						<li><a>Internet Of Things(IOT) </a></li>
-						<li><a>Web Security and Networking</a></li>
-						<li><a>Robotics</a></li>
-					</ol>
-				</div>
-			</details>
-
-			<details class="column" style="background-color:#111417;">
-				<summary>
-
-					<h2 style="text-align: center;">Track 5</h2>
-				</summary>
-				<div class="list-type1" style="width: 100%;">
-					<ol>
-						<li><a>Concrete Technology</a></li>
-						<li><a>Structural Engg.</a></li>
-						<li><a>Construction Technology and Management</a></li>
-						<li><a>Geotechnical Engg.</a></li>
-						<li><a>Transportation Engg. </a></li>
-						<li><a>Water Resource Engg.</a></li>
-						<li><a>Environmental Engg.</a></li>
-					</ol>
-				</div>
-			</details>
-
-		</div> -->
-
-		<!-- dropdown start -->
-
-
-
-		<!-- dropdown end -->
-
-		<div class="row section-head">
-			<div class="twelve columns" style="background-color:#111417;">
-				<p style="text-align: center; font-size:20px;height:100%; ">Entries are not restricted to these topics
-					only.</p>
-			</div>
-		</div>
-		<!-- <div class="three-blocks" style="display: flex; column-gap: 90px;  height: 370px; justify-content: center;">
-			<div class="flip-card" style="float: left;">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front" style="justify-content: center; text-align: center; color: #FFF;">
-					
-					<p>Track 1</p>
-					<img src="./images/portfolio/track1.jpg" alt="">
-				  </div>
-				  <div class="flip-card-back">
-					  <br>
-					<li><a>Thermal and Fluid Power Engg.</a></li>
-					<li><a>Design of Mechanical Systems</a></li>
-					<li><a>Advanced Manufacturing Technique</a></li>
-					<li><a>Renewable Energy</a></li>
-					<li><a>Optimisation and Simulation</a></li>
-					
-				  </div>
-				</div>
-			  </div>
-			  <div class="flip-card" style="float: inline-start;">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					
-					
-					<p>Track 2</p>
-					<img src="./images/portfolio/track2.jpg" alt="">
-				  </div>
-				  <div class="flip-card-back">
-					  <br>
-					<li><a>Microcontroller and Embedded System</a></li>
-					<li><a>Signal,Image, Speech & Video Processing</a></li>
-					<li><a>Emerging Wireless Communication Technologies and Sensor Networ</a></li>
-					<li><a>VLSI Application</a></li>
-					<li><a>Microwave and Radar Engg</a></li>
-						  </div>
-				</div>
-			  </div>
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<p>Track 3</p>
-					<img src="./images/portfolio/track3.jpg" alt="">
-				  </div>
-				  <div class="flip-card-back">
-					  <br><br>
-					<li><a>Process Automation</a></li>
-						<li><a>Control System Design & Simulation</a></li>
-						<li><a>Latest Trends in Sensor Design</a></li>
-						<li><a>Biomedical Instrumentation </a></li>
-						<li><a>Instrumentation for Agriculture and Society</a></li>
-			
-				  </div>
-				</div>
-			  </div>
-
-		</div>
-		<div class="two-block" style="padding-top: 20px; column-gap: 60px; height: 310px; display:flex ;justify-content: center; row-gap: 30px;">
-			<div class="flip-card" style=" " >
-				<div class="flip-card-inner" style="border-radius: 7px;">
-				  <div class="flip-card-front"   width: 100% ; height: 100%;" >
-					<p>Track 4</p>
-					<img src="./images/portfolio/track4.jpg" alt="">
-					
-				  </div>
-				  <div class="flip-card-back">
-					  <br>
-					  <br>
-					<li><a>Cloud Computing and Big Data</a></li>
-						<li><a>Artifical Intelligence and Machine Learning</a></li>
-						<li><a>Gaming</a></li>
-						<li><a>Internet Of Things(IOT) </a></li>
-						<li><a>Web Security and Networking</a></li>
-						<li><a>Robotics</a></li>
-				  </div>
-				</div>
-			  </div>
-			<div>
-				
-			</div>  
-			<div>
-
-			</div> -->
 		<div>
 			<div class="row justify-content-center">
 				<div class="col-md-4 mt-4">
 					<div class="card" style="background: transparent;">
 						<img src="./images/portfolio/track1.jpg" class="card-img-top" alt="...">
 						<div class="card-body" style="align-items: center; text-align: center;">
-							<h5 class="card-title">Track 1</h5>
+							<h5 class="card-title">Track Mech</h5>
 						</div>
-						<ul class="list-group list-group-flush" >
-							<li class="list-group-item">Thermal and Fluid Power Engg.</li>
-							<li class="list-group-item">Design of Mechanical Systems</li>
-							<li class="list-group-item">Advanced Manufacturing Technique</li>
-							<li class="list-group-item">Renewable Energy</li>
-							<li class="list-group-item">Optimisation and Simulation</li>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">1. Thermal and Fluid Power Engg.</li>
+							<li class="list-group-item">2. Mechanical System Design and Development</li>
+							<li class="list-group-item">3. Advanced Manufacturing Technique</li>
+							<li class="list-group-item">4. Renewable Energy</li>
+							<li class="list-group-item">5. Optimisation and Simulation AI and ML application to
+								Mechanical systems</li>
 						</ul>
 					</div>
 
@@ -667,15 +472,16 @@
 					<div class="card" style="background: transparent">
 						<img src="./images/portfolio/track2.jpg" class="card-img-top" alt="...">
 						<div class="card-body" style="align-items: center; text-align: center;">
-							<h5 class="card-title">Track 2</h5>
+							<h5 class="card-title">Track EXTC</h5>
 						</div>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Microcontroller and Embedded System</li>
-							<li class="list-group-item">Signal,Image, Speech & Video Processing</li>
-							<li class="list-group-item">Emerging Wireless Communication Technologies and Sensor Network
+							<li class="list-group-item">1. Microcontroller and Embedded System</li>
+							<li class="list-group-item">2. IoT and Industry 4.0</li>
+							<li class="list-group-item">3. Emerging Wireless Communication Technologies and Sensor
+								Network
 							</li>
-							<!-- <li class="list-group-item">VLSI Application</li> -->
-							<li class="list-group-item">Microwave and Radar Engg</li>
+							<li class="list-group-item">4. Signal,Image, Speech & Video Processing</li>
+							<li class="list-group-item">5. VLSI Application</li>
 						</ul>
 
 					</div>
@@ -684,14 +490,14 @@
 					<div class="card" style="background: transparent">
 						<img src="./images/portfolio/track3.jpg" class="card-img-top" alt="...">
 						<div class="card-body" style="align-items: center; text-align: center;">
-							<h5 class="card-title">Track 3</h5>
+							<h5 class="card-title">Track Instru</h5>
 						</div>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Process Automation</li>
-							<li class="list-group-item"><a> Control System Design & Simulation</a></li>
-							<li class="list-group-item">Latest Trends in Sensor Design</li>
-							<li class="list-group-item">Biomedical Instrumentation</li>
-							<li class="list-group-item">Instrumentation for Agriculture and Society</li>
+							<li class="list-group-item">1. Sensor Design/Process Automation</li>
+							<li class="list-group-item">2. Automation for Agriculture Society</li>
+							<li class="list-group-item">3. Instrumentation for medical field</li>
+							<li class="list-group-item">4. IOT for Automation</li>
+							<!-- <li class="list-group-item">Instrumentation for Agriculture and Society</li> -->
 						</ul>
 
 					</div>
@@ -700,15 +506,15 @@
 					<div class="card" style="background: transparent">
 						<img src="./images/portfolio/track4.jpg" class="card-img-top" alt="...">
 						<div class="card-body" style="align-items: center; text-align: center;">
-							<h5 class="card-title">Track 4</h5>
+							<h5 class="card-title">Track Comp/IT</h5>
 						</div>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Cloud Computing and Big Data</li>
-							<li class="list-group-item">Artifical Intelligence and Machine Learning</li>
-							<li class="list-group-item">Gaming</li>
-							<li class="list-group-item">Internet Of Things(IOT)</li>
-							<li class="list-group-item">Web Security and Networking</li>
-							<li class="list-group-item">Robotics</li>
+							<li class="list-group-item">1. Cloud Computing and Big Data</li>
+							<li class="list-group-item">2. Artifical Intelligence and Machine Learning</li>
+							<li class="list-group-item">3. Gaming</li>
+							<li class="list-group-item">4. Internet Of Things(IOT)</li>
+							<li class="list-group-item">5. Web Security and Networking</li>
+							<li class="list-group-item">6. Robotics</li>
 						</ul>
 
 					</div>
@@ -717,16 +523,16 @@
 					<div class="card" style="background: transparent">
 						<img src="./images/portfolio/track5.jpg" class="card-img-top" alt="...">
 						<div class="card-body" style="align-items: center; text-align: center;">
-							<h5 class="card-title">Track 5</h5>
+							<h5 class="card-title">Track Civil</h5>
 						</div>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Concrete Technology</li>
-							<li class="list-group-item">Structural Engg.</li>
-							<li class="list-group-item">Construction Technology and Management</li>
-							<li class="list-group-item">Geotechnical Engg.</li>
-							<li class="list-group-item">Transportation Engg.</li>
-							<li class="list-group-item">Water Resource Engg.</li>
-							<li class="list-group-item">Environmental Engg.</li>
+							<li class="list-group-item">1. Concrete Technology and Structural Engg.</li>
+							<!-- <li class="list-group-item"></li> -->
+							<li class="list-group-item">2. Construction Management and Urban Planning</li>
+							<li class="list-group-item">3. Transportation and Geotechnical Engg.</li>
+							<!-- <li class="list-group-item"> Engg.</li> -->
+							<li class="list-group-item">4. Environmental and Water Resource Engg.</li>
+							<!-- <li class="list-group-item"> Engg.</li> -->
 						</ul>
 
 					</div>
@@ -822,7 +628,7 @@
 
 					<div class="service-content" style="text-align: center;">
 						<p>The project abstract of not more than 250 words is to be sent via the registration link by
-							<b style="color: #30839F;">7<sup>th</sup> April 2022</b>
+							<b style="color: #30839F;">11<sup>th</sup> April 2022</b>
 						</p>
 					</div>
 
@@ -861,11 +667,11 @@
 					<div class="service-content">
 						<p>
 						<ol>
-							<li>An Abstract of maximum 250 words should be submitted before, 7th April, 2022 to the
+							<li>An Abstract of maximum 250 words should be submitted before, 11th April, 2022 to the
 								following email address : vnps2022@vcet.edu.in
 							</li>
 							<li>
-								A sample abstact would look like <a href='sample_abstract.pdf'target="_blank"
+								A sample abstact would look like <a href='sample_abstract.pdf' target="_blank"
 									class="link">this</a>
 							</li>
 							<li>
@@ -936,7 +742,7 @@
 							<br>
 							<li>
 								<p>
-									Payment should be done by 7<sup>th</sup> April 2022 itself.
+									Payment should be done by 11<sup>th</sup> April 2022 itself.
 
 								</p>
 							</li>
@@ -979,20 +785,20 @@
 
 					<div class="service-content">
 						<p style="text-align: center;">
-						<p><b>Track 1 </b><br> <a href="tel:+91-9969199626">Aditya Hendre: +91 9969199626</a><br><a
-								href="tel:+91-7219061488">Pratik Singh: +91 7219061488 </a>
+						<p><b>Track Mech </b><br> <a href="tel:+91-9969199626"> Siraj Qadri: +91 9561105618</a><br><a
+								href="tel:+91-7219061488"> Rahul Bagade: +91 8446692978</a>
 						</p><br>
-						<p><b>Track 2 </b><br> <a href="tel:+91-76662 45859	">Samruddhi: +91 76662 45859</a><br><a
-								href="tel:+91- 95270 04387">Sumukh Tiwarekar: +91 95270 04387</a>
+						<p><b>Track EXTC </b><br> <a href="tel:+91-76662 45859	">Samruddhi Dubey: +91 76662
+								45859</a><br><a href="tel:+91- 95270 04387">Sumukh Tiwarekar: +91 95270 04387</a>
 						</p><br>
-						<p><b>Track 3 </b><br> <a href="tel:+91-7066112287">Shraddha Mestry : +91 7066112287</a><br><a
-								href="tel:+91-7678096369">Dikshant Solanki: +91 7678096369</a>
+						<p><b>Track Instru </b><br> <a href="tel:+91-7066112287">Shraddha Mestry : +91
+								7066112287</a><br><a href="tel:+91-7678096369">Dikshant Solanki: +91 7678096369</a>
 						</p><br>
-						<p><b>Track 4 </b><br>
+						<p><b>Track COMP/IT </b><br>
 							<a href="tel:+91-8080170871">Nidhi Karulkar: +91 8080170871</a><br>
 							<a href="tel:+91- 7798963544">Harsh Sawant: +91 7798963544</a><br>
 						</p><br>
-						<p><b>Track 5 </b><br> <a href="tel:+91-86005 78184">Hardik Vora: +91 86005 78184</a><br><a
+						<p><b>Track Civil </b><br> <a href="tel:+91-86005 78184">Hardik Vora: +91 86005 78184</a><br><a
 								href="tel:+91-99874 44967">Tanmayee tele : +91 99874 44967
 							</a>
 						</p>
@@ -1139,19 +945,27 @@
 
 
 	<!--prize-->
-	<section id="testimonials" style="background: #30839F;">
+	<section id="testimonials" style="background: #30839F;" style="text-align: center;">
 
 		<div class="container" style="text-align: center;">
-			<h2 style="font-size:40px;text-align: center; color:  white">Prize Pool</h2></br>
+			<h2 class="revealOnScroll" data-animation="fadeInUp"
+				style="text-align:center; font-weight: bold; color: white; font-size: min(18vw, 10rem);">
+				<div style="transform: scale(0.7);">
+					Prize Pool
+				</div>
+				<div>
+					₹1,30,000
+				</div>
+			</h2>
 			<div>
-				<i style="color: white">
+				<!-- <i style="color: white">
 
 
 					<span class="revealOnScroll" data-animation="fadeInUp"
-						style="text-align:center;	font-size: 70px; font-weight: bold;	color: white; width: min(18vw, 10rem)">₹1,00,000</span>
+						style="text-align:center;	font-size: 70px; font-weight: bold;	color: white; width: min(18vw, 10rem)">₹1,30,000</span>
 
 
-				</i>
+				</i> -->
 				<!--br><br><h2 style="color: white; font-size: 50px;">INR</h2-->
 
 			</div>

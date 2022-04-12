@@ -108,7 +108,7 @@ h1 {
 
 h2 {
 	font-size: 24px;
-	line-height: 30px;
+	/* line-height: 30px; */
 }
 
 h3 {
@@ -2091,8 +2091,7 @@ h5 {
 
 #testimonials {
 	background: #30839F;
-	padding-top: 90px;
-	padding-bottom: 112px;
+	padding: 2em 0;
 	position: relative;
 	min-height: 198px;
 	width: 100%;
